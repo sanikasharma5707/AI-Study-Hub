@@ -1,0 +1,178 @@
+/* =========================================
+   Upload Notes Page
+========================================= */
+
+.upload-page{
+    min-height:100vh;
+    background:linear-gradient(135deg,#f8fbff,#eef5ff);
+    padding:40px 20px;
+}
+
+/* =========================================
+   Hero Section
+========================================= */
+
+.upload-hero{
+    text-align:center;
+    margin-bottom:40px;
+}
+.upload-hero h1{
+    font-size:46px;
+    color:#1e3a8a;
+    margin-bottom:15px;
+}
+.upload-hero p{
+    max-width:700px;
+    margin:auto;
+    font-size:19px;
+    line-height:1.8;
+    color:#6b7280;
+}
+/* =========================================
+   Main Container
+========================================= */
+.upload-container{
+    max-width:1100px;
+    margin:auto;
+    padding:20px;
+}
+/* =========================================
+   Upload Card
+========================================= */
+.upload-form{
+    width:550px;
+    margin:auto;
+    background:#1f2937;
+    padding:40px;
+    border-radius:18px;
+    text-align:center;
+    box-shadow:0 18px 40px rgba(0,0,0,.15);
+}
+.upload-form h2{
+    color:#fff;
+    font-size:34px;
+    margin-bottom:15px;
+}
+.upload-text{
+    color:#d1d5db;
+    font-size:17px;
+    line-height:1.8;
+    margin-bottom:25px;
+}
+.upload-form input{
+    color:#fff;
+    margin:25px 0;
+}
+.upload-form button{
+    width:100%;
+    padding:15px;
+    margin-top:15px;
+    border:none;
+    border-radius:10px;
+    background:#2563eb;
+    color:#fff;
+    font-size:17px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+.upload-form button:hover{
+    background:#1d4ed8;
+    transform:translateY(-2px);
+}
+.upload-form button:disabled{
+    opacity:.7;
+    cursor:not-allowed;
+}
+
+/* =========================================
+   Summary Card
+========================================= */
+.summary-box{
+    max-width:900px;
+    margin:45px auto;
+    padding:35px;
+    background:#fff;
+    border-radius:20px;
+    box-shadow:0 12px 35px rgba(0,0,0,.12);
+    animation:fadeIn .5s ease;
+}
+.summary-box h2{
+    text-align:center;
+    color:#2563eb;
+    margin-bottom:30px;
+}
+
+/* =========================================
+   Markdown Content
+========================================= */
+.summary-box h1,
+.summary-box h2,
+.summary-box h3{
+    color:#1d4ed8;
+}
+.summary-box p{
+    color:#374151;
+    font-size:18px;
+    line-height:1.9;
+    text-align:left;
+    white-space:pre-wrap;
+}
+.summary-box ul{
+    padding-left:28px;
+    margin:20px 0;
+}
+.summary-box li{
+    color:#374151;
+    font-size:18px;
+    line-height:1.9;
+    margin:10px 0;
+}
+.summary-box strong{
+    color:#111827;
+}
+.summary-box li p{
+    display:inline;
+}
+
+/* =========================================
+   Animation
+========================================= */
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* =========================================
+   Responsive
+========================================= */
+
+@media(max-width:768px){
+    .upload-hero h1{
+        font-size:36px;
+    }
+    .upload-hero p{
+        font-size:17px;
+    }
+    .upload-form{
+        width:90%;
+        padding:30px;
+    }
+    .upload-form h2{
+        font-size:28px;
+    }
+    .summary-box{
+        padding:25px;
+    }
+    .summary-box p,
+    .summary-box li{
+        font-size:16px;
+    }
+}
