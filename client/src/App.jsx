@@ -6,7 +6,7 @@ import ProtectedRoute from "./components/ProtectedRoute";
 import Home from "./pages/Home";
 import UploadNotes from "./pages/UploadNotes";
 import Flashcards from "./pages/Flashcards";
-import MCQ from "./pages/mcq";
+import MCQ from "./pages/MCQ";
 
 function App() {
   return (
